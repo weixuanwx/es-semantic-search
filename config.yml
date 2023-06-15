@@ -1,0 +1,31 @@
+es:
+  url: "YOUR_URL"
+  user: "YOUR_USERNAME"
+  password: "YOUR_PASSWORD"
+  cert: false
+  ada_index: "ada-index"
+  pt_sbert_index: "pt-sbert-index"
+  ft_sbert_index: "ft-sbert-index"
+data:
+  data_folder: "data/"
+  raw_data: "data.csv"
+  data_w_pt_sbert_emb: "data_w_pt_sbert_emb.csv"
+  data_w_ft_sbert_emb: "data_w_ft_sbert_emb.csv"
+  data_w_ada_emb: "data_w_ada_emb.csv"
+  trg_query_ada_emb: "trg_query_ada_emb.csv"
+  qna_train: "queries_to_corpus_train.xlsx"
+  qna_test: "queries_to_corpus_test.xlsx"
+search:
+  search_folder: "search/"
+evaluate:
+  batch: "b1"
+  result_folder: "results"
+ada:
+  engine: "text-search-ada-doc-001"
+  encoding: "r50k_base"
+  n_samples: 5000
+sbert:
+  pretrained: "msmarco-distilbert-base-dot-prod-v3"
+  pretrained_dim: 768
+  finetuned: "search-model"
+  finetuned_dim: 768
