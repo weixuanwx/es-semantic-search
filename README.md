@@ -2,7 +2,7 @@
 
 ## Introduction
 
-- This project will attempt to build a semantic search service while comparing the results from two language models: OpenAI's Ada Embeddings and Siamese BERT
+- This project will attempt to build a semantic search service while comparing the results from two language models: OpenAI's Ada Embeddings and Sentence-BERT
 - Because we only tag 1 correct document to each query, the evaluation scores are not fully indicative of the performance of the models. They are only used as a general comparison since we don't have fully labelled data. Close inspection of the results are required
 
 ## Pre-installation
